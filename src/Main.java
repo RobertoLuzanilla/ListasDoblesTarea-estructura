@@ -44,24 +44,22 @@ public class Main {
                             break;
                         case 4:
                             System.out.println("Eliminar al inicio");
-
+                            OL.EliminarInicio();
+                            System.out.println("Eliminado correctamente");
                             break;
                         case 5:
                             System.out.println("Eliminar al final");
-
+                            OL.EliminarFinal();
                             break;
                         case 6:
                             System.out.println("Eliminar elemento");
                             System.out.println("Introduzca que eleento quiere eliminar");
                             ubicacion = sc.nextInt();
+                            System.out.println("Eliminado correctamente");
                             break;
                         case 7:
                             System.out.println("Mostrar");
-
-                            break;
-                        case 8:
-
-                            System.out.println("Gracias por esar el programa");
+                            OL.mostrarLista();
                             break;
                     }
         }while (opcion!=8);

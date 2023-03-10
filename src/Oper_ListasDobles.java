@@ -49,5 +49,47 @@ public class Oper_ListasDobles {
         }
         return i;
     }
+    boolean EliminarInicio(){
+         boolean i=false;
+
+         if (prim!=null){
+             i=true;
+             if (prim==ulti){
+                 prim=null;
+                 ulti=null;
+             }
+             else {
+                 NodoDoble nodoActual=prim;
+                 prim=prim.sig;
+                 prim.ant=null;
+                 nodoActual.sig=null;
+
+             }
+         }
+         return i;
+    }
+    boolean EliminarFinal(){
+         boolean i=false;
+         if (ulti!=null){
+             i=true;
+             if (prim==ulti){
+                 prim=null;
+                 ulti=null;
+             }else{
+                    NodoDoble nodoActual=ulti;
+                    ulti=ulti.ant;
+                    ulti.sig=null;
+                    nodoActual.ant=null;
+             }
+         }
+         return i;
+    }
+    void mostrarLista(){
+         NodoDoble nodoActual = prim;
+        while (nodoActual != null){
+            System.out.println(nodoActual.dato);
+            nodoActual = nodoActual.sig;
+        }
+     }
 
 }
