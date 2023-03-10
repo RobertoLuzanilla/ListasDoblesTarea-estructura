@@ -5,6 +5,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         int opcion=0, dato1, ubicacion;
 
+        Oper_ListasDobles OL=new Oper_ListasDobles();
         do {
 
             System.out.println("Menu de listas dobles");
@@ -23,12 +24,15 @@ public class Main {
                             System.out.println("Insertar inicio");
                             System.out.println("Introduzca el digito que desea");
                             dato1 = sc.nextInt();
+                            OL.insertarInicio(dato1);
 
                             break;
                         case 2:
                             System.out.println("Insertar final");
                             System.out.println("Introduzca el digito que desea");
                             dato1 = sc.nextInt();
+                            OL.insertarFinal(dato1);
+
                             break;
                         case 3:
                             System.out.println("Insertar enseguida");
@@ -36,6 +40,7 @@ public class Main {
                             dato1 = sc.nextInt();
                             System.out.println("Introduzca el digito al que desea insertar enseguida");
                             ubicacion = sc.nextInt();
+                            OL.insertarEnseguida(dato1,ubicacion);
                             break;
                         case 4:
                             System.out.println("Eliminar al inicio");
