@@ -20,6 +20,8 @@ public class Oper_ListasDobles {
              prim=nuevo;
              ulti=nuevo;
          }else {
+
+
              nuevo.ant=ulti;
              ulti.sig=nuevo;
              ulti=nuevo;

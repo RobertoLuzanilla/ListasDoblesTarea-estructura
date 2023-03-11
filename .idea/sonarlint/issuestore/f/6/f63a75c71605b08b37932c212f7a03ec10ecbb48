@@ -1,0 +1,9 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şŠ¤Ü
+0
+java:S1220""Move this file to a named package.
+8
+java:S1659""Declare "ulti" on a separate line.(¦˜ûè
+h	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âãêÿÿÿÿÿ
+b	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÔÆ5
+S	java:S106Z"9Replace this use of System.out or System.err by a logger.(”ĞÁİüÿÿÿÿ
